@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <android.support.percent.PercentRelativeLayout
         android:id="@+id/homophone_disc_container"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -17,18 +17,14 @@
         app:layout_heightPercent="50%"
         app:layout_widthPercent="100%">
 
-        <com.marcinmoskala.arcseekbar.ArcSeekBar
-            android:id="@+id/seekArc"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            app:progressBackgroundColor="#000000"
-            app:progressBackgroundWidth="20dp"
-            app:progressColor="@color/colorAccent"
-            app:progress="20"
-            app:progressWidth="20dp"
-            app:roundEdges="true" />
+        <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+            android:id="@+id/music_seeker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="100%"/>
 
-    </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
 
     <android.support.percent.PercentRelativeLayout
         android:layout_width="0dp"
